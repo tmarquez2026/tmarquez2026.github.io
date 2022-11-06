@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Slab&display=swap" rel="stylesheet">  
+        <title>Stultifera Navis</title>
+        <style>
+            body {
+                background-image: url('The_Golden_Ship.webp');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                width: 1720px;
+                height: 1900px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 100px;
+                background-color: #0b0e10;
+            }
+            h1, h2 {
+                font-family: 'Montserrat', sans-serif;
+            }
+            p {
+                font-family: 'Alegreya', serif;
+            }
+            ul {    
+              list-style-type: none;
+              margin-top: auto;
+              overflow: hidden;
+              background-color: rgba(80, 80, 80, 0.9);
+              padding-left: 0px;
+              margin-left: 0px;
+          }
+
+          ul li {
+              float: left;
+              font-family: 'Roboto Slab', serif;
+              width: 16.66%;
+          }
+
+
+          ul li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              border-style: inset;
+              border-width: 3px;
+              border-color: #000000;
+          }
+
+          /* Change the link color to #111 (black) on hover */
+          ul li a:hover {
+              background-color: #ab9f4d
+          }
+            #header {
+                height: 200px;
+                width: 100%;
+                background-position: center center;
+                background-size: cover;
+                background-color: rgba(25,25,24,0.7);
+                }
+            #pagetitle {
+                font-family: 'Playfair Display', serif;
+                font-size: 64pt;
+                color: #f3cb00;
+                padding-top: 50px;
+                padding-bottom: 47px;
+                text-align: center;
+
+
+            }
+            #main {
+                height: 870px;
+            }
+
+            * {box-sizing:border-box}
+
+            /* Slideshow container */
+            .slideshow-container {
+              max-width: 700px;
+              max-height: 600px;
+              position: relative;
+              margin-left: 63px;
+              margin-right: 63px;
+              margin-top: 30px;
+
+            }
+
+            /* Hide the images by default */
+            .mySlides {
+              display: none;
+            }
+
+
+
+            .SlideTitle{
+              color: #ffe045;
+              padding-top: 45px;
+              font-size: 40px;
+              font-family: 'Playfair Display', serif;
+              text-align: center;
+
+
+            }
+            /* Caption text */
+            .text {
+              color: #ffe045;
+              font-size: 30px;
+              padding: 7px 12px;
+              position: absolute;
+              bottom: 8px;
+              width: 80%;
+              height: 12%;
+              margin-left: 115px;
+              margin-bottom: -10px;
+            }
+
+            /* Number text (1/3 etc) */
+            .numbertext {
+              color: #f2f2f2;
+              font-size: 20px;
+              padding: 8px 12px;
+              position: absolute;
+              top: 0;
+            }
+
+
+            .active, .dot:hover {
+              background-color: #717171;
+            }
+
+            /* Fading animation */
+            .fade {
+              animation-name: fade;
+              animation-duration: 1.5s;
+            }
+
+            @keyframes fade {
+              from {opacity: .4}
+              to {opacity: 1}
+            }
+
+            #article {
+                margin-top: 50px;
+                width: 38%;
+                height: 780px;
+                background-color: rgba(94,103,112,0.7);
+                border-radius: 20px;
+                border-color: #000000;
+                float: left;
+                border-style: inset;
+                border-width: 5px;
+
+            }
+            #article:hover, #video:hover, #skins:hover, #Other:hover {
+              background-color: rgba(94,103,112,0.9);
+          }
+
+            #video {
+                color: #ffe045;
+                text-align: center;
+                padding-top: 30px;
+                margin-top: 50px;
+                margin-left: 50px;
+                width: 59%;
+                height: 780px;
+                float: left;
+                background-color: rgba(94,103,112,0.7);
+                border-radius: 20px;
+                border-color: #000000;
+                border-style: inset;
+                border-width: 5px;
+                align-self: auto;
+            }
+            #Invi {
+              color: #ffe045;
+              text-align: center;
+              padding-top: 30px;
+              margin-top: 50px;
+              margin-left: 50px;
+              width: 101%;
+              height: 660px;
+              float: left;
+              background-color: rgba(94,103,112,0.7);
+              align-self: auto;
+          }
+            #Teaser{
+              font-family: 'Lora';
+              color: #ffe045;
+              font-size: 35px;
+              text-align: center;
+              padding-bottom: 40px;
+            }
+            .teaser-border{
+              margin-left: auto;
+              margin-right: auto;
+              position: relative;
+              height: 510px;
+              width: 920px;
+              border: 5px solid black;
+              overflow: hidden;
+            }
+            #teaservid {
+              padding-top: 55px;
+              margin-left: auto;
+              margin-right: auto;
+              height: 700px;
+              width: 920px;
+              margin-top: -640px;
+            }
+            #skins {
+              display:inline-block;
+              margin-top: 50px;
+              width: 53%;
+              height: 720px;
+              background-color: rgba(94,103,112,0.7);
+              border-radius: 20px;
+              border-color: #000000;
+              border-style: inset;
+              border-width: 5px;
+            }
+            #Other {
+              color: #ffe045;
+              text-align: center;
+              padding-top: 30px;
+              margin-top: 50px;
+              margin-left: 40px;
+              width: 44%;
+              height: 720px;
+              background-color: rgba(94,103,112,0.7);
+              border-radius: 20px;
+              border-color: #000000;
+              border-style: inset;
+              border-width: 5px;
+              float: right;
+          }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <p id="pagetitle">STULTIFERA NAVIS</p>
+        </div>
+        <div id="nav">
+            <ul>
+                <li><a href="PreSpalter.html">Characters</a></li>
+                <li><a href="Skins.html">Skins</a></li>
+                <li><a href="PreStory.html">Story</a></li>
+                <li><a href="banner.html">Banner</a></li>
+                <li><a href="Event.html">Event</a></li>
+                <li><a href="Aboutme.html">About the Author</a></li>
+              </ul>
+        </div>
+        <div id="main">
+            <a href="PreSpalter.html"><div id="article">
+                <div class="SlideTitle"><span style="font-family:Lora;">Feature Characters</span></div>
+                <div class="slideshow-container" data-cycle="3000">
+                  <div class="mySlides fade">
+                      <div class="numbertext">1 / 3</div>
+                      <img alt="Spalter" src="char_1023_ghost2_2.webp" style="width: 110%; margin-left: -10px; margin-top: -30px">
+                      <div class="text" style="padding-left: 20px;">Specter the Unchained</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                      <div class="numbertext">2 / 3</div>
+                      <img alt="Irene" src="Irene_Elite_2.webp" style="width:100%">
+                      <div class="text" style="padding-left: 120px; margin-top: 30px">Irene</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                      <div class="numbertext">3 / 3</div>
+                      <img alt="Skalter" src="Skadi_the_Corrupting_Heart_Elite_2.webp" style="width:100%">
+                      <div class="text" style="margin-left: 90px">&nbsp;Skadi the Corrupting Heart</div>
+                  </div>
+              </div>
+            </div></a>
+            <div id="video" style="position:relative">
+              <a href="Prestory.html" ><div id="Invi" style="position:absolute;z-index:1;background-color:transparent;margin-left:-5px;margin-top:-32px"></div></a>
+              <h1 id="Teaser">Story Teaser</h1>
+              <div class="teaser-border"></div>
+              <video id="teaservid" controls>
+                <source src="Teaser.mp4" type="video/mp4">
+              </video>
+            </div>
+            <a href="Skins.html"><div id="skins">
+              <div class="SlideTitle"><span style="font-family:Lora;">New Skins</span></div>
+              <div class="slideshow-container" data-cycle="3000">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img alt="Mudrock_Skin" src="MudrockSkin2.jpg" style="width:110%; margin-top: 55px;" >
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img alt="Tequila_Skin" src="TequilaSkin_0.jpg" style="width:110%; margin-top: 55px;">
+                    <div class="text" style="color: #249997; margin-left: 30px; margin-bottom: 70px;">Card Winner</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img alt="Skalter_Skin" src="Sublimation.jpg" style="width: 110%; margin-top: 55px;">
+                </div>
+                </div>
+            </div></a>
+            <a href='banner.html'><div id="Other">
+              <div class="SlideTitle"><span style="font-family:Lora;">Abyss Corrosion Banner</span></div>
+              <img alt="Banner" src="hqdefault.jpg" style="width: 90%; margin-top: 50px;">
+            </div></a>
+        </div>
+        <div id="footer">
+        </div>
+        <script>
+          /* Find all slideshow containers */
+          var slideshowContainers = document.getElementsByClassName("slideshow-container");
+          /* For each container get starting variables */
+          for(let s = 0; s < slideshowContainers.length; s++) {
+            /* Read the new data attribute */
+            var cycle = slideshowContainers[s].dataset.cycle;
+            var slides = slideshowContainers[s].querySelectorAll('.mySlides');
+            var slideIndex = 0;
+            showSlides(slides, slideIndex, cycle);
+            };
+
+          /* Function is alsmost same, but now it uses 3 new parameters */
+          function showSlides(slides, slideIndex, cycle) {
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            };
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            };
+            slides[slideIndex - 1].style.display = "block";
+            /* Calling same function, but with new parameters and cycle time */
+            setTimeout(function() {
+                showSlides(slides, slideIndex, cycle)
+            }, cycle);
+            };
+      </script>
+    </body>
+</html>

@@ -1,0 +1,137 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Slab&display=swap" rel="stylesheet">  
+    <title>Stultifera Navis</title>
+    <style>
+      #bgVideo {
+        min-width: 100%;
+        min-height: 100%;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+      }
+      .content {
+        position: fixed;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        padding: 20px;
+        margin-left: -8px;
+        color: rgb(206,80,106);
+    }
+      #myBtn:hover {
+        background: #ddd;
+        color: black;
+      }
+      #myBtn {
+        text-align: center;
+        font-size: 40px;
+        margin-right: 800px;
+        width: 100px;
+        margin-bottom: 14px;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        float: right;
+        }
+      #MuteButton::before {
+          content:  '🔇';
+      }
+
+      #MuteButton.muted::before {
+          content:  '🔈';
+      }
+
+      #MuteButton {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        background: rgba(0,0,0,.5);
+        border: none;
+        color: #fff;
+        z-index: 5;
+        font-size: 2rem;
+        border-radius: 2rem;
+        width: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+        text-align: center;
+      }
+      .arrow:hover {
+        background: rgb(206,80,106);
+        color: black;
+        }
+      .arrow {
+        margin-left: 270px;
+        border: solid rgb(206,80,106);
+        border-width: 0 10px 10px 0;
+        display: inline-block;
+        padding: 3px;
+      }
+      .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+      }
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: rgb(206,80,106);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .prev:hover, .next:hover {
+        background: rgb(206,80,106);
+        color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <video id="bgVideo" autoplay loop muted>
+        <source src="Skalter_OST.mp4" type="video/mp4">
+      </video>
+      <a id="MuteButton" class="muted" onclick="toggleMute();">
+      </a>
+      <a href="PreIrene.html"><div class="prev">&lt;</div></a>
+    <div></div>
+    <div class="content">
+        <div class="title">
+          <a href="Spalter.html"><div id="myBtn">
+          </div></a>
+          <h1>Skadi the Corrupting Heart<img alt="Supporter" src="Supporter.webp" style="width:2%;margin-left:30px">
+          <img alt="Bard" src="Bard_Supporter.webp" style="width:2%">
+          <img alt="Aegir" src="Aegir.webp  " style="width: 2%"></h1>
+          </div>
+        <p style="color: rgb(206,80,106); font-family: 'Lora', serif;">Skadi the Corrupting Heart, a visitor familiar yet unbeknownst to you
+          <a href="Skalter.html"><i class="arrow down"></i></a></p>
+      </div>
+<script>
+    function toggleMute() {
+        var button=document.getElementById("MuteButton")
+        var video=document.getElementById("bgVideo")
+
+        if(video.muted){
+          video.muted = false;
+        } else {
+          video.muted = true;
+        }
+        button.classList.toggle('muted');
+      }
+</script>
+</body>
+</html>

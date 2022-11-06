@@ -1,0 +1,98 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Stultifera Navis</title>
+    <style>
+        /* Style the video: 100% width and height to cover the entire window */
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        /* Add some content at the bottom of the video/page */
+        .content {
+            position: fixed;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Style the button used to pause/play the video */
+        #myBtn {
+            width: 200px;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #myBtn:hover {
+            background: #ddd;
+            color: black;
+        }
+        #MuteButton::before {
+            content:  '🔇';
+        }
+
+        #MuteButton.muted::before {
+            content:  '🔈';
+        }
+
+        #MuteButton {
+          position: fixed;
+          top: 1rem;
+          right: 1rem;
+          background: rgba(0,0,0,.5);
+          border: none;
+          color: #fff;
+          z-index: 5;
+          font-size: 2rem;
+          border-radius: 2rem;
+          width: 4rem;
+          height: 4rem;
+          line-height: 4rem;
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <video id="myVideo" autoplay loop muted>
+        <source src="Specter_Ost.mp4" type="video/mp4">
+    </video>
+
+<a id="MuteButton" class="muted" onclick="toggleMute();">
+</a>
+
+  <div class="content">
+    <h1>Heading</h1>
+    <p>Lorem ipsum...</p>
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+  </div>
+  <a id="MuteButton" class="muted" onclick="toggleMute();"></a>
+
+  <script>
+    function toggleMute() {
+        var button=document.getElementById("MuteButton")
+        var video=document.getElementById("bgVideo")
+
+        if(video.muted){
+          video.muted = false;
+        } else {
+          video.muted = true;
+        }
+
+        button.classList.toggle('muted');
+      }
+    </script>
+</body>
+
+
+</html>

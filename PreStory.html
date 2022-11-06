@@ -1,0 +1,148 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <title>Stultifera Navis</title>
+    <meta charset="utf-8">
+    <style>
+        #bgVideo {
+        min-width: 100%;
+        min-height: 100%;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        }
+        .content {
+            position: fixed;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #cca63d;
+            width: 100%;
+            padding: 20px;
+            margin-left: -8px;
+        }
+        #myBtn:hover {
+            background: #ddd;
+            color: black;
+            }
+        #myBtn {
+            text-align: center;
+            font-size: 40px;
+            margin-right: 800px;
+            width: 100px;
+            margin-bottom: 14px;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            float: right;
+            }
+        #MuteButton::before {
+            content:  '🔇';
+        }
+        
+        #MuteButton.muted::before {
+            content:  '🔈';
+        }
+        
+        #MuteButton {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(0,0,0,.5);
+            border: none;
+            color: #fff;
+            z-index: 5;
+            font-size: 2rem;
+            border-radius: 2rem;
+            width: 4rem;
+            height: 4rem;
+            line-height: 4rem;
+            text-align: center;
+        }
+        .arrow:hover {
+            background: #eed89c;
+            color: black;
+            }
+        .arrow {
+            margin-left: 320px;
+            border: solid #eed89c;
+            border-width: 0 10px 10px 0;
+            display: inline-block;
+            padding: 3px;
+        }
+        .down {
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+        .redown {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -32px;
+            margin-right: 100px;
+            padding: 16px;
+            color: #cca63d;
+            font-weight: bold;
+            font-size: 30px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .redown:hover {
+            background: #ddd;
+            color: #cca63d;
+            }
+        a:link {
+             color: #cca63d;
+            background-color: transparent;
+            text-decoration: none;
+        }
+              
+        a:visited {
+            color: #cca63d;
+            background-color: transparent;
+            text-decoration: none;
+            }
+              
+        a:hover {
+            color: #cca63d;
+            background-color: transparent;
+            text-decoration: none;
+        }
+              
+        a:active {
+            color: #cca63d;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+    </style>  
+</head>
+<body>
+    <video id="bgVideo" autoplay loop muted>
+        <source src="Story.mp4" type="video/mp4">
+      </video>
+      <a id="MuteButton" class="muted" onclick="toggleMute();">
+      </a>
+    <div class="content">
+        <div class="title">
+          <h1>Stultifera Navis</h1>
+          <div class="redown"><a href="Story.html">Explore</a></div>
+          </div>
+      </div>
+<script>
+    function toggleMute() {
+        var button=document.getElementById("MuteButton")
+        var video=document.getElementById("bgVideo")
+        
+        if(video.muted){
+          video.muted = false;
+        } else {
+          video.muted = true;
+        }
+        button.classList.toggle('muted');
+      }
+</script>
+</body>

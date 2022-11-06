@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Slab&display=swap" rel="stylesheet">  
+    <title>Stultifera Navis</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            background: url('Screen Shot 2022-05-02 at 2.29.06 PM.png') no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1850px;
+            height: 3000px;
+        }
+        #header {
+            height: 250px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            font-size: 70px;
+            background-color:rgba(39,53,76,0.9);
+            margin-bottom: 100px;
+        }
+        #article {
+            background-color: #26344c;
+            width: 90%;
+            height: 7020px;
+            float: left;
+            margin-bottom: 20px;
+            margin-left: 82.5px;
+        }
+        #pagetitle {
+            font-family: 'Playfair Display', serif;
+            font-size: 64pt;
+            color: #ffffff;
+            padding-top: 50px;
+            padding-bottom: 47px;
+            text-align: center;
+            height: 130px;
+        }
+        #Summary {
+            width: 90%;
+            background-color: #445376;
+            background-size: cover;
+            height: 530px;
+            margin-left: 60px;
+            margin-top: 100px;
+            border-color: #191921;
+            border-style: inset;
+            border-width: 5px;
+        }
+        .boxhead {
+            margin-top: 60px;
+            margin-left: 57px;
+            margin-bottom: -70px;
+            font-family: 'Lora', serif;
+            font-size: 32pt;
+            color: white;
+        }
+        #table{
+            color: #ffffff;
+            font-size: 30px;
+            margin-left: 25px;
+            margin-top: 20px;
+        }
+        .grad {
+            background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(27,38,95,255));
+            height: 3px;
+            margin-top: 10px;
+          }
+        #white {
+            background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(238,238,228,255));
+        }
+        #white1 {
+            background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(238,238,228,255));
+        }
+        #Pic {
+            width: 15%;
+            display: inline;
+        }
+        .cell {
+            height:70px;
+            font-size: 29px;
+        }
+        .page-content .center {
+            text-align: center;
+            width: 100%
+        }
+        #stats {
+            display:inline-block;
+            width: 52%;
+            background-color: #445376;
+            height: 240px;
+            margin-left: 60px;
+            margin-top: 80px;
+            border-color: #191921;
+            border-style: inset;
+            border-width: 5px;
+        }
+        .range {
+            width: 97%;
+            display:inline-block;
+            margin-top: 30px;
+            margin-left: 30px;
+            margin-bottom: -70px;
+            font-family: 'Lora', serif;
+            font-size: 40px;
+            color: white;
+        }
+        #attributes{
+            display:inline-block;
+            width: 53%;
+            background-color: #445376;
+            height: 510px;
+            margin-left: 56px;
+            margin-top: 30px;
+            border-color: #191921;
+            border-style: inset;
+            border-width: 5px;
+        }
+        #attributes2{
+            display:inline-block;
+            width: 53%;
+            background-color: #445376;
+            height: 510px;
+            margin-left: 56px;
+            margin-top: 30px;
+            border-color: #191921;
+            border-style: inset;
+            border-width: 5px;
+        }
+        #attributes3{
+            display:inline-block;
+            width: 53%;
+            background-color: #445376;
+            height: 670px;
+            margin-left: 56px;
+            margin-top: 30px;
+            border-color: #191921;
+            border-style: inset;
+            border-width: 5px;
+        }
+        #right {
+            float: right;
+            height: 2350px;
+            width: 43%;
+        }
+        #attributes4{
+            display:inline-block;
+            width: 80%;
+            background-color: #445376;
+            height: 38%;
+            margin-left: 40px;
+            margin-right: 50px;
+            margin-top: 80px;
+            border-color: #191921;
+            border-style: inset;
+            border-width: 5px;
+        }
+        #attributes5{
+            display:inline-block;
+            width: 80%;
+            background-color: #445376;
+            height: 36%;
+            margin-left: 40px;
+            margin-right: 60px;
+            margin-top: 40px;
+            border-color: #191921;
+            border-style: inset;
+            border-width: 5px;
+
+        }
+        #attributes6{
+            display:inline-block;
+            width: 80%;
+            background-color: #445376;
+            height: 20%;
+            margin-left: 40px;
+            margin-right: 60px;
+            margin-top: 40px;
+            border-color: #191921;
+            border-style: inset;
+            border-width: 5px;
+
+        }
+
+        #attributes7{
+            display:inline-block;
+            width: 53%;
+            background-color: #434c6a;
+            height: 520px;
+            margin-left: 52px;
+            margin-right: 40px;
+            margin-top: 60px;
+            border-color: #191921;
+            border-style: inset;
+            border-width: 5px;
+
+        }
+        #attributes8{
+            display:inline-block;
+            width: 570px;
+            background-color: #434c6a;
+            height: 420px;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-top: 170px;
+            border-color: #191921;
+            border-style: inset;
+            border-width: 5px;
+
+        }
+        .inside {
+            border-style: inset;
+            border-width: 3px;
+            border-color:#1a2352;
+            background-color: #445376;
+            height: 300px;
+            margin-top: 10px;
+            margin-right: 30px;
+        }
+        #skills {
+            margin-top: 200px;
+        }
+        .at {
+            margin-top: 30px;
+            margin-left: 30px;
+            font-family: 'Lora', serif;
+            font-size: 30px;
+            color: white;
+
+        }
+        .at td{
+            width:200px;
+        }
+        .first-col{
+            width: 500px;
+        }
+        ul {
+            font-size: 25px;
+            line-height: 1.5;
+        }
+        .slideshow-container {
+            max-width: 700px;
+            max-height: 600px;
+            position: relative;
+            margin-top: 30px;
+
+          }
+          /* Hide the images by default */
+          .mySlides {
+            display: none;
+          }
+
+
+            .SlideTitle{
+            color: #fffefc;
+            padding-top: 45px;
+            font-size: 40px;
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+
+
+            }
+            /* Caption text */
+          .text {
+            color: #ffffff;
+            font-size: 35px;
+            padding: 7px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 80%;
+            height: 12%;
+            margin-left: 115px;
+            margin-bottom: -25px;
+          }
+
+            /* Number text (1/3 etc) */
+          .numbertext {
+            color: #f2f2f2;
+            font-size: 20px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+          }
+          a:link {
+            color: #ffffff;
+            background-color: transparent;
+          }
+
+          a:visited {
+            color: #ffffff;
+            background-color: transparent;
+          }
+
+          a:hover {
+            color: #ffffff;
+            background-color: transparent;
+          }
+
+          a:active {
+            color: #ffffff;
+            background-color: transparent;
+          }
+          .S1 {
+            border-style: solid;
+            border-width: 5px;
+            border-color: #1a2352;
+            background-color: #445376;
+          }
+
+
+        #navline{    
+            list-style-type: none;
+            margin-top: auto;
+            overflow: hidden;
+            margin-top: -100px;
+            padding-left: 0px;
+            margin-left: -2px;
+        }
+
+        .navcell {
+            float: left;
+            font-family: 'Roboto Slab', serif;
+            width: 14.26%;
+        }
+
+
+        .nava {
+            font-size: 21px;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-style: solid;
+            border-width: 5px;
+            border-color: rgb(0, 0, 0);
+        }
+        .nava:hover {
+            background-color: #1a1276
+        }
+        #nav {
+            margin-left: -15px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <h1 id="pagetitle">Stultifera NAVIS</h1>
+        <div id="nav">
+            <ul id="navline">
+                <li class="navcell"><a href="index.html" class="nava">Home</a></li>
+                <li class="navcell"><a href="PreSpalter.html" class="nava">Characters</a></li>
+                <li class="navcell"><a href="Skins.html" class="nava">Skins</a></li>
+                <li class="navcell"><a href="PreStory.html" class="nava">Story</a></li>
+                <li class="navcell"><a href="banner.html" class="nava">Banner</a></li>
+                <li class="navcell"><a href="Event.html" class="nava">Event</a></li>
+                <li class="navcell"><a href="Aboutme.html" class="nava">About the Author</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <div id="article">
+            <div class="boxhead">Specter the Unchained</div>
+            <div id="Summary">
+                <table id="table">
+                    <tr>
+                        <td colspan="2">
+                            <div>☆☆☆☆☆☆</div>
+                            <br>
+                            <div style="margin-top: -20px; font-size:35px;">Specter the Unchained</div>
+                            <div class="grad"></div>
+                            <div id="Pic">
+                            <img alt="Specialist" src="Specialist.webp" style="margin-right: 3px;margin-top: 3px;">
+                            <img alt="Dollkeeper" src="Dollkeeper_Specialist.webp" style="margin-right: 3px;margin-top: 3px;">
+                            <img alt="Abyssal Hunter" src="Abyssal_Hunters.webp" style="margin-right: 3px;margin-top: 3px;">
+                            </div>
+                        </td>
+                        <td rowspan="2">
+                            <div style="margin:0 auto; background:transparent; width:120px;">
+                                <div class="center">
+                                    <div class="floatnone">
+                                        <img alt="Spalter" src="Specter_the_Unchained_icon.webp">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="text-align:center; font-family:'Roboto Condensed';">
+                                <div style="margin-top:1.2em; font-size:25px;">
+                                    Specter the Unchained has broke free from her chains and awakened from her insanity.
+                                </div>
+                                <div style="margin-top:1.5em; font-size:25px; text-align:center;">
+                                    <i>Her madness remains while fighting</i>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="cell" style="height: 60px">
+                        <td style="width:205px">Position</td>
+                        <td style="width:205px;background-color: #445476">Melee</td>
+                    </tr>
+                    <tr class="cell">
+                        <td>Tags</td>
+                        <td>Fast Redeploy</td>
+                        <td>DPS</td>
+                    </tr>
+                    <tr class="cell">
+                        <td >Trait</td>
+                        <td colspan="2">Does not retreat upon lethal damage, instead swaps to a Substitute (Substitute has 0 Block). Swaps back to the original after 20 seconds</td>
+                    </tr>
+                    <tr class="cell">
+                        <td>Availability</td>
+                        <td colspan="2">[CN] Headhunting (Celebration limited)</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="stats">
+                <div class="range">
+                    Range
+                    <div style="font-size: 35px; text-align:center; padding-top:20px;">
+                        <span style="padding-left: 140px">Base</span>
+                        <span style="padding-left: 120px">Elite 1</span>
+                        <span style="padding-left: 120px; padding-right: 80px;">Elite 2</span>
+                    </div>
+                    <div style="font-size: 40px; text-align:center; padding-top:20px;">
+                        <span style="padding-left: 130px; padding-right: 25px">■□</span>
+                        <span style="padding-left: 130px; padding-right: 20px;">■□</span>
+                        <span style="padding-left: 150px; padding-right: 80px;">■□</span>
+                </div>
+            </div>
+            </div>
+            <div id="right">
+                <div id="attributes4">
+                    <div class="SlideTitle">Specter the Unchained</div>
+                    <div class="slideshow-container" data-cycle="3000">
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 2</div>
+                        <img alt="Spalter" src="Specter_the_Unchained.webp" style="width: 90%;">
+                        <div class="text" style="padding-left: 110px; margin-bottom:-40px">Base</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 2</div>
+                        <img alt="SpalterE2" src="Specter_the_Unchained_Elite_2.webp" style="width:90%; padding-left: 20px">
+                        <div class="text" style="padding-left: 50px;">Elite 2-<a href="https://www.youtube.com/watch?v=iRJvau3tiPo">L2D</a></div>
+                    </div>
+                    </div>
+                    <div class="range">
+                        <table style="font-size: 25px">
+                            <tr>
+                                <td style="width: 180px; height: 50px">
+                                    <strong>Real name</strong>
+                                </td>
+                                <td>
+                                    Laurentina
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 180px; height: 50px">
+                                    <strong>File Number</strong>
+                                </td>
+                                <td>
+                                    CRO2
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 180px; height: 50px">
+                                    <strong>Illustrator</strong>
+                                </td>
+                                <td>
+                                    Skade
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 180px; height: 50px">
+                                    <strong>Leitmotif</strong>
+                                </td>
+                                <td>
+                                    Awaken
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="attributes5">
+                    <div class="SlideTitle">Biography</div>
+                    <div class="range">
+                        <table style="font-size: 25px">
+                            <tr style="height: 60px;">
+                                <td style="width: 180px;">
+                                    <strong>Gender</strong>
+                                </td>
+                                <td>
+                                    Female
+                                </td>
+                            </tr>
+                            <tr style="height: 60px;">
+                                <td style="width: 180px;">
+                                    <strong>Place of Birth</strong>
+                                </td>
+                                <td>
+                                    Ægir
+                                </td>
+                            </tr>
+                            <tr style="height: 60px;">
+                                <td style="width: 180px;">
+                                    <strong>Date of birth</strong>
+                                </td>
+                                <td>
+                                    July 27th
+                                </td>
+                            </tr>
+                            <tr style="height: 60px;">
+                                <td style="width: 180px; padding-bottom: 100px">
+                                    <strong>Race</strong>
+                                </td>
+                                <td>
+                                    Aegir (Aegir-Seaborn hybrid with her Oripathy influence being suppressed by her Seaborn blood)
+                                </td>
+                            </tr>
+                            <tr style="height: 60px;">
+                                <td style="width: 180px;">
+                                    <strong>Height</strong>
+                                </td>
+                                <td>
+                                    162 cm
+                                </td>
+                            </tr>
+                            <tr style="height: 60px;">
+                                <td style="width: 180px; padding-bottom: 270px">
+                                    <strong>Infection Status</strong>
+                                </td>
+                                <td style="padding-right:10px">
+                                    Showed no outward symptoms of Originium infection, but confirmed Infected by medical examination.
+                                    <br>
+                                    <br>
+                                    Due to Specter's unique Oripathy status, clinical research to diagnose it remains ongoing.
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="attributes6">
+                    <div class="SlideTitle">Physical Examination</div>
+                    <div class="range">
+                        <table style="font-size: 25px">
+                            <tr>
+                                <td style="width: 250px; height: 50px">
+                                    <strong>Strength</strong>
+                                </td>
+                                <td>
+                                    Excellent
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 180px; height: 50px">
+                                    <strong>Mobility</strong>
+                                </td>
+                                <td>
+                                    Excellent
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 180px; height: 50px">
+                                    <strong>Endurance</strong>
+                                </td>
+                                <td>
+                                    Excellent
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 180px; height: 50px">
+                                    <strong>Tactical Acumen</strong>
+                                </td>
+                                <td>
+                                    Standard
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 180px; height: 50px">
+                                    <strong>Combat Skill</strong>
+                                </td>
+                                <td>
+                                    Excellent
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 180px; height: 50px">
+                                    <strong>Arts Adaptability</strong>
+                                </td>
+                                <td>
+                                    Flawed
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="attributes8">
+                    <div class="range">
+                        <span>Depths of Aegir</span>
+                            <div class="inside">
+                                <table style="font-size: 23px">
+                                    <tr style="height: 150px">
+                                        <td>
+                                            <img alt="Elite2" src="Elite_2.webp" style="width:30%; margin-left:30px;">
+                                        </td>
+                                        <td style="width: 85%; padding-right:10px">
+                                            The Substitute reduces the Movement Speed of nearby ground enemies by 20% and deals 20% of ATK as Arts damage every second
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 150px">
+                                        <td>
+                                            <img alt="Elite2" src="Elite_2.webp" style="width:30%; margin-left:10px;">
+                                            <img alt="Pot5" src="Potential_5.webp" style="width:30%; margin-left:10px;">
+                                        </td>
+                                        <td style="padding-right:10px">
+                                            The Substitute reduces the Movement Speed of nearby ground enemies by 30% and deals 30% of ATK as Arts damage every second
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div id="attributes">
+                <table class="at">
+                    <tr style="height: 50px;">
+                        <td style="width: 200px;" class="first-col">
+                            Attributes
+                        </td>
+                        <td>
+                            <img alt="Base" src="Base.webp" style="width:45px">
+                        </td>
+                        <td>
+                            <img alt="Base" src="Base.webp" style="width:45px">
+                            <span>↑</span>
+                        </td>
+                        <td>
+                            <img alt="Elite1" src="Elite_1.webp" style="width:45px">
+                            <span>↑</span>
+                        </td>
+                        <td>
+                            <img alt="Elite2" src="Elite_2.webp" style="width:45px">
+                            <span>↑</span>
+                        </td>
+                        <td>
+                            <img alt="Tristan" src="Trust.webp" style="width:45px">
+                        </td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td class="first-col">
+                            <img alt="HP" src="HP.webp" style="width:auto">
+                            HP
+                        </td>
+                        <td>
+                            1311
+                        </td>
+                        <td>
+                            1749
+                        </td>
+                        <td>
+                            2214
+                        </td>
+                        <td>
+                            2803
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td class="first-col">
+                            <img alt="ATK" src="ATK.webp" style="width:auto">
+                            ATK
+                        </td>
+                        <td>
+                            335
+                        </td>
+                        <td>
+                            459
+                        </td>
+                        <td>
+                            604
+                        </td>
+                        <td>
+                            737
+                        </td>
+                        <td>
+                            817
+                        </td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td class="first-col">
+                            <img alt="DEF" src="DEF.webp" style="width:auto">
+                            DEF
+                        </td>
+                        <td>
+                            133
+                        </td>
+                        <td>
+                            205
+                        </td>
+                        <td>
+                            267
+                        </td>
+                        <td>
+                            322
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td class="first-col">
+                            <img alt="RES" src="RES.webp" style="width: auto">
+                            RES
+                        </td>
+                        <td>
+                            0
+                        </td>
+                        <td>
+                            0
+                        </td>
+                        <td>
+                            0
+                        </td>
+                        <td>
+                            0
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td class="first-col">
+                            <img alt="Redeployment Time" src="RDP.webp" style="width: auto">
+                            Redepl.
+                        </td>
+                        <td>
+                            70s
+                        </td>
+                        <td>
+                            70s
+                        </td>
+                        <td>
+                            70s
+                        </td>
+                        <td>
+                            70s
+                        </td>
+                        <td>
+
+                        </td>
+
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td class="first-col">
+                            <img alt="COST" src="COST.webp" style="width: auto">
+                            DP cost
+                        </td>
+                        <td>
+                            14
+                        </td>
+                        <td>
+                            14
+                        </td>
+                        <td>
+                            16
+                        </td>
+                        <td>
+                            16
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td class="first-col">
+                            <img alt="BLOCK" src="BLOCK.webp" style="width: auto">
+                            Block
+                        </td>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            2
+                        </td>
+                        <td>
+
+                        </td>
+
+                    </tr>
+                    <tr style="height: 50px;">
+                        <td class="first-col">
+                            <img alt="Attack Speed" src="ASPD.webp" style="width: auto">
+                            Interval
+                        </td>
+                        <td>
+                            1.2s
+                        </td>
+                        <td>
+                            1.2s
+                        </td>
+                        <td>
+                            1.2s
+                        </td>
+                        <td>
+                            1.2s
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="attributes2">
+                <div class="range">
+                    <div style="height: 65px">Potential</div>
+                    <div style="font-size: 30px;"><img alt="Pot2" src="Potential_2.webp" style="width: 40px; margin-right: 20px">DP Cost -1</div>
+                    <div style="font-size: 30px;"><img alt="Pot3" src="Potential_3.webp" style="width: 40px; margin-right: 20px">Redeployment time -4 seconds</div>
+                    <div style="font-size: 30px;"><img alt="Pot4" src="Potential_4.webp" style="width: 40px; margin-right: 20px">ATK +33</div>
+                    <div style="font-size: 30px;"><img alt="Pot5" src="Potential_5.webp" style="width: 40px; margin-right: 20px">Improves Depths of Aegir</div>
+                    <div style="font-size: 30px;"><img alt="Pot6" src="Potential_6.webp" style="width: 40px; margin-right: 20px">DP cost -1</div>
+                    <div style="font-size: 40px; text-align:center; margin-top:35px;">Total Cost</div>
+                    <div style="font-size: 40px; text-align:center">5<img alt="SpalterToken" src="Specter_the_Unchained_27s_Token.webp" style="width:60px">or 20<img alt="SpecialistToken" src="Royal_Specialist_Token.webp" style="width:60px"></div>
+                </div>
+            </div>
+            <div id="attributes3">
+                <div class="range">
+                    <div style="height: 65px">Promotion</div>
+                    <div class="grad" style="margin-bottom: 10px"></div>
+                    <table>
+                    <tr>
+                        <td><div style="font-size:30px;"><img alt="Elite1" src="Elite_1.webp">&nbsp;Elite 1</div>
+                        <ul>
+                            <li>Maximum attributes increased</li>
+                            <li>DP cost +2</li>
+                            <li>New skill: Survival Instinct</li>
+                            <li>Embrace Yourself improved</li>
+                        </ul>
+                        </td>
+                        <td style="width: 400px;">
+                            <div style="font-size:35px; text-align:center; height:50px">Requirements</div>
+                            <div style="font-size:30px; text-align:center"><u>Level 50</u></div>
+                            <div style="font-size: 30px; text-align:center; margin-top: 20px">30k<img alt="Lungmen Dollar" src="LMD.webp" style="width: 40px; margin-right: 5px">
+                            5<img alt="SpecialistChip" src="Specialist_Chip.webp" style="width: 40px; margin-right: 5px">
+                            8<img alt="Sugar" src="Sugar.webp" style="width: 40px; margin-right: 5px">
+                            5<img alt="Polyketon" src="Polyketon.webp" style="width: 40px; margin-right: 5px">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="grad" style="margin-bottom: 20px"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><div style="font-size:30px;"><img alt="Elite2" src="Elite_2.webp">&nbsp;Elite 2</div>
+                        <ul>
+                            <li>Maximum attributes increased</li>
+                            <li>New skill: Survivor's Guilt.</li>
+                            <li>New talent: Depths of Aegir.</li>
+                            <li>Embrace Yourself improved</li>
+                            <li>Operator Modules available.</li>
+                        </ul>
+                        </td>
+                        <td style="width: 400px;">
+                            <div style="font-size:35px; text-align:center; height:50px">Requirements</div>
+                            <div style="font-size:30px; text-align:center"><u>Elite 1 Level 80</u></div>
+                            <div style="font-size: 30px; text-align:center; margin-top: 20px">180k<img alt="Lungmen Dollar" src="LMD.webp" style="width: 45px; margin-right: 5px">
+                            4<img alt="Specialist_Dualchip" src="Specialist_Dualchip.webp" style="width: 45px; margin-right: 5px">
+                            4<img alt="Polymerization_Preperation" src="Polymerization_Preparation.webp" style="width: 45px; margin-right: 5px">
+                            5<img alt="Keton_Colloid" src="Keton_Colloid.webp" style="width: 45px; margin-right: 5px">
+                            </div>
+                        </td>
+                    </tr>
+                    </table>
+
+                </div>
+            </div>
+            <div>
+                <div class="range">
+                    <span style="margin-left: 60px">Traits</span>
+                <div class="grad" id="white" style="margin-left: 60px"></div>
+                    <div id="attributes7">
+                        <div class="range">
+                        <span>Embrace Oneself</span>
+                            <div class="inside">
+                                <table style="font-size: 20px">
+                                    <tr style="height: 100px">
+                                        <td>
+                                            <img alt="Base" src="Base.webp" style="width:30%; margin-left:50px;">
+                                        </td>
+                                        <td style="width: 85%; padding-right:10px">
+                                            The Substitute reduces the Movement Speed of nearby ground enemies by 20% and deals 20% of ATK as Arts damage every second
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 100px">
+                                        <td>
+                                            <img alt="Elite1" src="Elite_1.webp" style="width:30%; margin-left:50px;">
+                                        </td>
+                                        <td style="padding-right:10px">
+                                            The Substitute reduces the Movement Speed of nearby ground enemies by 30% and deals 30% of ATK as Arts damage every second
+                                        </td>
+                                    </tr>
+                                    <tr style="height: 100px">
+                                        <td>
+                                            <img alt="Elite2" src="Elite_2.webp" style="width:30%; margin-left:50px;">
+                                        </td>
+                                        <td style="padding-right:10px">
+                                            The Substitute reduces the Movement Speed of nearby ground enemies by 40% and deals 40% of ATK as Arts damage every second
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="margin:0; padding:0">　□□□　</div>
+                                <div style="margin-top:-20px; padding:0">　□■□　</div>
+                                <div style="margin-top:-20px; padding:0">　□□□　</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="skills">
+                <div class="range">
+                    <span style="margin-left: 60px">Skills</span>
+                <div class="grad" id="white1" style="margin-left: 60px"></div>
+                <table style="margin-top: 30px; text-align:center; font-size: 30px; width:92%; margin-left:48px;">
+                    <tr style="height: 100px;">
+                        <td class="S1" rowspan="2" style="background-color: #434c6a">
+                            <img alt="Skill of Survival" src="Skill-Unchained1.webp" style="width:80px">
+                        </td>
+                        <td class="S1"  style="background-color: #434c6a">
+                            Skills of Survival
+                        </td>
+                        <td colspan="3" rowspan="2" class="S1"  style="background-color: #434c6a">
+                            □□□
+                            <br>
+                            □■□
+                            <br>
+                            □□□
+                        </td>
+                    </tr>
+                    <tr style="height: 100px">
+                        <td class="S1"  style="background-color: #434c6a">
+                            <span>Auto Recovery-</span>
+                            <span>Manual Trigger-</span>
+                            <span>25 Secs</span>
+                        </td>
+                    </tr>
+                    <tr style="height: 100px">
+                        <td class="S1"  style="background-color: #434c6a">
+                            Level
+                        </td>
+                        <td class="S1"  style="background-color: #434c6a">
+                            Effect
+                        </td>
+                        <td class="S1"  style="background-color: #434c6a">
+                            <img alt="SP_init" src="SP_init.webp" width="40">
+                        </td>
+                        <td class="S1"  style="background-color: #434c6a">
+                            <img alt="SP cost" src="SP_cost.webp" width="40">
+                        </td>
+                        <td class="S1"  style="background-color: #434c6a">
+                            <img alt="Duration" src="Duration.webp" width="50">
+                        </td>
+                    </tr>
+                    <tr style="height: 200px">
+                        <td class="S1"  style="background-color: #434c6a">
+                            1
+                        </td>
+                        <td style="width: 50%;" class="S1">
+                            When activated, immediately switches self Max HP percentage with an Operator with the lowest Max HP percentage within range; ATK +60%
+                        </td>
+                        <td class="S1">
+                            5
+                        </td>
+                        <td class="S1">
+                            45
+                        </td>
+                        <td class="S1">
+                            25s
+                        </td>
+                    </tr>
+                    <tr style="height: 200px">
+                        <td class="S1"  style="background-color: #434c6a">
+                            7
+                        </td>
+                        <td class="S1">
+                            When activated, immediately switches self Max HP percentage with an Operator with the lowest Max HP percentage within range; ATK +120%
+                        </td>
+                        <td class="S1">
+                            15
+                        </td>
+                        <td class="S1">
+                            40
+                        </td>
+                        <td class="S1">
+                            25s
+                        </td>
+                    </tr>
+                    <tr style="height: 200px">
+                        <td class="S1"  style="background-color: #434c6a">
+                            M3
+                        </td>
+                        <td class="S1">
+                            When activated, immediately switches self Max HP percentage with an Operator with the lowest Max HP percentage within range; ATK +150%
+                        </td>
+                        <td class="S1">
+                            25
+                        </td>
+                        <td class="S1">
+                            35
+                        </td>
+                        <td class="S1">
+                            25s
+                        </td>
+                    </tr>
+                </table>
+                <table style="margin-top: 30px; text-align:center; font-size: 30px; width:92%; margin-left:48px;">
+                    <tr style="height: 100px;">
+                        <td class="S1" rowspan="2" style="background-color: #434c6a; width: 15%">
+                            <img alt="Thirst for Survival" src="Skill-Unchained2.webp" style="width:80px">
+                        </td>
+                        <td class   ="S1"  style="background-color: #434c6a" colspan="4">
+                            Thirst for Survival
+                        </td>
+                    </tr>
+                    <tr style="height: 100px">
+                        <td class="S1"  style="background-color: #434c6a" colspan="4">
+                            <span>Auto Recovery-</span>
+                            <span>Manual Trigger-</span>
+                            <span>13-25 secs</span>
+                        </td>
+                    </tr>
+                    <tr style="height: 100px">
+                        <td class="S1"  style="background-color: #434c6a">
+                            Level
+                        </td>
+                        <td class="S1"  style="background-color: #434c6a">
+                            Effect
+                        </td>
+                        <td class="S1"  style="background-color: #434c6a">
+                            <img alt="SP_init" src="SP_init.webp" width="40">
+                        </td>
+                        <td class="S1"  style="background-color: #434c6a">
+                            <img alt="SP_cost" src="SP_cost.webp" width="40">
+                        </td>
+                        <td class="S1"  style="background-color: #434c6a">
+                            <img alt="Duration" src="Duration.webp" width="50">
+                        </td>
+                    </tr>
+                    <tr style="height: 200px">
+                        <td class="S1"  style="background-color: #434c6a">
+                            1
+                        </td>
+                        <td style="width: 50%; padding-left:20px; padding-right:20px" class="S1">
+                            ATK +40%, ASPD +10. While skill is active, prevents Specter's HP from falling below 1 Will be defeated when the skill ends
+                        </td>
+                        <td class="S1">
+                            15
+                        </td>
+                        <td class="S1">
+                            40
+                        </td>
+                        <td class="S1">
+                            13s
+                        </td>
+                    </tr>
+                    <tr style="height: 200px">
+                        <td class="S1"  style="background-color: #434c6a">
+                            7
+                        </td>
+                        <td class="S1" style="width: 50%; padding-left:20px; padding-right:20px">
+                            ATK +100%, ASPD +34. While skill is active, prevents Specter's HP from falling below 1 Will be defeated when the skill ends
+                        </td>
+                        <td class="S1">
+                            25
+                        </td>
+                        <td class="S1">
+                            35
+                        </td>
+                        <td class="S1">
+                            17s
+                        </td>
+                    </tr>
+                    <tr style="height: 200px">
+                        <td class="S1"  style="background-color: #434c6a">
+                            M3
+                        </td>
+                        <td class="S1" style="width: 50%; padding-left:20px; padding-right:20px">
+                            ATK +130%, ASPD +50. While skill is active, prevents Specter's HP from falling below 1 Will be defeated when the skill ends
+                        </td>
+                        <td class="S1">
+                            25
+                        </td>
+                        <td class="S1">
+                            35
+                        </td>
+                        <td class="S1">
+                            20s
+                        </td>
+                    </tr>
+                </table>
+                <table style="margin-top: 30px; text-align:center; font-size: 30px; width:92%; margin-left:48px;">
+                    <tr style="height: 100px;">
+                        <td class="S1" rowspan="2" style="background-color: #434c6a; width:190px">
+                            <img alt="SpalterSkill3" src="Skill-Unchained3.webp" style="width:40%">
+                        </td>
+                        <td class="S1"  style="background-color: #434c6a" colspan="4">
+                            The Pressure to Survive
+                        </td>
+                    </tr>
+                    <tr style="height: 100px">
+                        <td class="S1"  style="background-color: #434c6a" colspan="4">
+                            <span>Auto Recovery-</span>
+                            <span>Manual Trigger-</span>
+                            <span>25 secs</span>
+                        </td>
+                    </tr>
+                    <tr style="height: 100px">
+                        <td class="S1"  style="background-color: #434c6a">
+                            Level
+                        </td>
+                        <td class="S1"  style="background-color: #434c6a">
+                            Effect
+                        </td>
+                        <td class="S1"  style="background-color: #434c6a">
+                            <img alt="SP_init" src="SP_init.webp" width="40">
+                        </td>
+                        <td class="S1"  style="background-color: #434c6a">
+                            <img alt="Sp_cost" src="SP_cost.webp" width="40">
+                        </td>
+                        <td class="S1"  style="background-color: #434c6a">
+                            <img alt="Duaration" src="Duration.webp" width="50">
+                        </td>
+                    </tr>
+                    <tr style="height: 250px">
+                        <td class="S1"  style="background-color: #434c6a">
+                            1
+                        </td>
+                        <td style="width: 50%;" class="S1">
+                            Attack interval increases, attacks all blocked enemies, ATK +130%, Max HP +100%; deal 40% ATK as extra Physical damage when attacking enemies with HP percentage equal to or higher than self, otherwise lose 3% of HP
+                        </td>
+                        <td class="S1">
+                            15
+                        </td>
+                        <td class="S1">
+                            50
+                        </td>
+                        <td class="S1">
+                            25s
+                        </td>
+                    </tr>
+                    <tr style="height: 250px">
+                        <td class="S1"  style="background-color: #434c6a">
+                            7
+                        </td>
+                        <td class="S1">
+                            Attack interval increases, attacks all blocked enemies, ATK +200%, Max HP +160%; deal 60% ATK as extra Physical damage when attacking enemies with HP percentage equal to or higher than self, otherwise lose 3% of HP	
+                        </td>
+                        <td class="S1">
+                            20
+                        </td>
+                        <td class="S1">
+                            40
+                        </td>
+                        <td class="S1">
+                            25s
+                        </td>
+                    </tr>
+                    <tr style="height: 250px">
+                        <td class="S1"  style="background-color: #434c6a">
+                            M3
+                        </td>
+                        <td class="S1">
+                            Attack interval increases, attacks all blocked enemies, ATK +260%, Max HP +200%; deal 70% ATK as extra Physical damage when attacking enemies with HP percentage equal to or higher than self, otherwise lose 3% of HP	
+                        </td>
+                        <td class="S1">
+                            25
+                        </td>
+                        <td class="S1">
+                            40
+                        </td>
+                        <td class="S1">
+                            25s
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+        </div>
+        </div>
+        <script>
+            /* Find all slideshow containers */
+            var slideshowContainers = document.getElementsByClassName("slideshow-container");
+            /* For each container get starting variables */
+            for(let s = 0; s < slideshowContainers.length; s++) {
+              /* Read the new data attribute */
+              var cycle = slideshowContainers[s].dataset.cycle;
+              var slides = slideshowContainers[s].querySelectorAll('.mySlides');
+              var slideIndex = 0;
+              showSlides(slides, slideIndex, cycle);
+              };
+
+            /* Function is alsmost same, but now it uses 3 new parameters */
+            function showSlides(slides, slideIndex, cycle) {
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";
+              };
+              slideIndex++;
+              if (slideIndex > slides.length) {
+                  slideIndex = 1
+              };
+              slides[slideIndex - 1].style.display = "block";
+              /* Calling same function, but with new parameters and cycle time */
+              setTimeout(function() {
+                  showSlides(slides, slideIndex, cycle)
+              }, cycle);
+              };
+        </script>
+    </body>
+</html>
